@@ -10,10 +10,13 @@ public class firstTask{
         System.out.println( "Hello there" +" "+ name + " " +surname);
         System.out.println( "Are you tring to log in as" +" "+ nickname + "?");
 
-        if(age >= 18){
-            System.out.println("Come in sir, what would you like to drink?");
+        if(args.length > 0){
+            String username = args[0];
+            System.out.println("Hello there " + username);
     }else{
-        System.out.println("You must be 18 or older to drink.");
+        System.out.println("A username is required to run this application");
     }
 
+
+    System.out.println(args[0]);
 }}
